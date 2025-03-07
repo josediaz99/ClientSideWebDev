@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not Watchmojo</title>
+    <link rel="icon" type= "image/png" href= "website exaple logo.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbf92f7ed3.js" crossorigin="anonymous"></script>
+    <script src="carousel.js"></script>
+</head>
+<body>
+    <header>
+        <nav class = "container-header-content"> <!-- this will only contain the header postion like a vavigation bar a logo maybe some user sign in or whatever is needed-->
+            <div class = "navdiv">
+                <div class = "header-logo"><!--this will contain alol the information and spacing we need for a logo as well as provide variations if they need to be changed with different sizing-->
+                    <h1>Not Watchmojo</h1>
+                </div>
+                <div class = "header-menu"><!--contains information much like a navigation bar but in this context were using it to -->
+                    <h2>NEW! the time i was reincarnated as a furry (not real)</h2>
+                </div>     
+                <div class = "navigation-menu"><!--this can be like te account , saved, search , whatever function -->
+                    <ul class = "user-actions"><!--we can use a list as a way to group our menu buttons or functions-->
+                        
+                        <li>
+                            <div class = "user-Action-item">
+                                <i class = "fa-solid fa-house"></i>                       
+                            </div> 
+                        </li> 
+
+                        <div class = "user-Action-item">
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass">
+
+                                </i>
+                            </li>
+                        </div>
+
+                        <div class ="user-Action-item">
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                            </li>
+                        </div>            
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+    </header>
+    <div><!-- this is where well have the main content which is our top 3 -->
+        <div class = "carousel">
+            <div class = "slide-show">
+                <div class = "slides fade" >
+                    <div class = "number"> 1 / 3</div>
+                    <img src ="Ep216IchigoUlquiorraClash.webp" style="width: 100%;">
+                    <div class = "text"> Bleach: ulquiorra vs ichigo </div>
+                </div>
+                <div class = "slides fade" >
+                    <div class = "number"> 2 / 3</div>
+                    <img src ="maxresdefault.jpg" style="width: 100%;">
+                    <div class = "text"> AOT: Erwin speech </div>
+                </div>
+                <div class = "slides fade" >
+                    <div class = "number"> 3 / 3</div>
+                    <img src ="Nina_alexander.webp" style="width: 100%;">
+                    <div class = "text"> FMA: Nina </div>
+                </div>
+    
+                <!-- buttons to go forward or back-->
+                <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+                <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- the dots on the bottom -->
+            <div style = "text-align: center;">
+                <span class = "dot" onclick = "currentSlide(1)"></span>
+                <span class = "dot" onclick = "currentSlide(2)"></span>
+                <span class = "dot" onclick = "currentSlide(3)"></span>
+            </div>
+              
+        </div>
+    </div>
+    <footer><!-- this is where well have websites we recomend users visit-->
+        <div>
+            <div class = "row">
+                <div class = "column">
+                    <div class = "card">
+                        <img src="download.png" alt="netflix" style = "width:100%">
+                        <div class="container">
+                            <h2>netflix</h2>
+                            <p class ="title">find FMA & AOT</p>
+                            <a href = "https://www.netflix.com"><button class ="button" >Go Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "column">
+                    <div class = "card">
+                        <img src="download (1).png" alt = "crunchyroll" style = "width:100%">
+                        <div class ="container">
+                            <h2>crunchyroll</h2>
+                            <p class ="title"> find FMA & AOT  </p>  
+                            <a href = "http://www.crunchyroll.com"><button class = "button"> Go Now</button> </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class = "column">
+                    <div class = "card">
+                        <img src= "download (2).png" alt = " disney+" style = "width:100%">
+                        <div class ="container">
+                            <h2>disney+</h2>
+                            <p class ="title"> find Bleach </p>
+                            <a href ="https://www.disneyplus.com/"><button class = "button">Go Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
