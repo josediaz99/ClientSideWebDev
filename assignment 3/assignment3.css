@@ -1,0 +1,90 @@
+#hero {
+    position: relative;
+}
+
+#hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+#hero .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    text-align: center;
+    display: flex;
+    align-items: flex-end; /* Positions the text at the bottom */
+    justify-content: center;
+    padding-bottom: 0px; /* Adjust spacing as needed */
+    color: aliceblue;
+}
+
+h2{
+text-align: center;
+}
+.fedCards{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    
+
+}
+.fed{
+    height: 100;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.fed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fed p {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.fed :hover{
+    box-shadow: inset;
+}
+
+#info {
+    align-items: left;
+
+}
+ol {
+    list-style: none;
+}
+ul {
+padding-left: 35%;    
+padding-right: 35%;
+
+}
+li {
+    text-align: left;
+}
+h3{
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
