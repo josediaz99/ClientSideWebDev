@@ -140,12 +140,13 @@ aside h2 {
     margin-bottom: 8px;
 }
 aside ul {
+    list-style: none;
     line-height: 1.5;
     margin: 0;
     padding-left: 16px;
 }
 aside a:link, aside a:visited {
-    color: gray
+    color: black
 }
 aside a:hover, aside a:focus {
     color: maroon;
@@ -173,4 +174,98 @@ footer a:link, footer a:visited {
 }
 footer a:hover, footer a:focus {
     color: maroon;
+}
+
+/*style for the card class*/
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: darkgray
+}
+
+.card-img-left {
+    order: 0; /* Ensure the image stays on the left */
+    flex: 1;
+    max-width: 30%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.card-img-right {
+    order: 2; /* Move the image to the right */
+    flex: 1;
+    max-width: 30%; /* Adjust width as needed */
+    text-align: center;
+}
+.card-img-left img, .card-img-right img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.card-content {
+    order:1;
+    flex: 2;
+    padding: 0 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+.card-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: black;
+}
+
+
+
+.card-content .button:hover {
+    background-color: #0056b3;
+}
+
+#team-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+  
+
+    background-color: darkgray;
+}
+
+#team-card .card-img-left {
+    flex: 1;
+    max-width: 30%; /* Ensure the image takes up only 30% of the card width */
+    text-align: center; /* Center the image horizontally */
+}
+
+#team-card .card-img-left img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 180px; /* Optional: Add rounded corners */
+}
+
+#team-card .card-content {
+    flex: 2;
+    padding-left: 120px; /* Add spacing between the image and text */
+}
+
+#team-card .card-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+#team-card .card-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: black;
 }
